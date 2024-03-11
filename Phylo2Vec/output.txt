@@ -1,0 +1,1 @@
+33330, ((Rat,(Tarsier,(((Tree_Shrew,Rabbit),(Mouse_Lemur,Galago)),((Macaque,(((Chimpanzee,Human),Gorilla),Orangutan)),Marmoset)))),(Horse,Sloth))
