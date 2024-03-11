@@ -1,0 +1,52 @@
+skipped 0 lines with no opening bracket 
+skipped 0 multifurcating or invalid trees
+skipped 0 trees with less than 4 leaves
+2 gene trees remaining
+
+Initial Supertree:  ((15,14),(13,12))
+Adding leaf 11  (5/16)
+(((16,15),(14,13)),12)
+Adding leaf 10  (6/16)
+(((16,15),(14,13)),(12,11))
+Adding leaf 9   (7/16)
+(((16,15),(14,13)),((12,11),10))
+Adding leaf 8   (8/16)
+((((16,15),(14,13)),9),((12,11),10))
+Adding leaf 7   (9/16)
+(((((16,15),(14,13)),9),((12,11),10)),8)
+Adding leaf 6   (10/16)
+(((((16,15),(14,13)),9),((12,11),10)),(8,7))
+Adding leaf 5   (11/16)
+(((((16,15),(14,13)),9),((12,11),10)),((8,7),6))
+Adding leaf 4   (12/16)
+(((((16,15),(14,13)),9),((12,11),10)),((8,7),(6,5)))
+Adding leaf 3   (13/16)
+(((((16,15),(14,13)),9),((12,11),10)),((8,7),((6,4),5)))
+Adding leaf 2   (14/16)
+(((((16,15),(14,13)),9),((12,11),10)),((8,7),((6,(4,3)),5)))
+Adding leaf 1   (15/16)
+(((((16,15),(14,13)),9),((12,11),10)),((8,7),((6,(4,3)),(5,2))))
+Adding leaf 0   (16/16)
+(((((16,15),(14,13)),9),((12,11),10)),((8,7),((6,(4,3)),((5,2),1))))
+
+Initial Supertree:
+(((((16,15),(14,13)),9),((12,11),10)),((8,7),((6,(4,3)),((5,2),1))))
+Total Distance: 5
+Current Supertree:
+(((((16,15),(14,13)),9),((12,11),10)),((6,(8,7)),((4,3),((5,2),1))))
+Total Distance: 4
+Final Supertree:
+(((((16,15),(14,13)),9),((12,11),10)),((6,(8,7)),((4,3),((5,2),1))))
+Final Distance: 4
+
+/////////////////////
+
+The first set of lines indicate the options chosen, the number of invalid
+trees and the number of valid trees.
+The program then builds a supertree greedily by placing the most
+frequent taxa first. Finally, the program applies 25 iterations of
+global SPR rearrangements (or a user-specified number using the -i option
+as shown here ) and outputs the best tree and distance found at the end of
+each iteration. To build larger trees the -r x option will limit the
+SPR rearrangements to transfers of length at most x. For example,
+-r 1 uses only NNI rearrangements.
